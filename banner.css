@@ -1,5 +1,6 @@
 header {
     position: center;
+    margin-top: 50px;
 }
 
 body {
@@ -85,7 +86,12 @@ body {
     margin-bottom: 5px;
 }
 
+h1, h2, p, li {    
+    font-family: "RASKHAL", sans-serif;
+    color: rgb(90, 21, 21); /* Replace "Rashkal" with your desired font */
+}
+
 @font-face {
-    font-family: 'RASKHAL';
+    font-family: "RASKHAL";
     src: url('fonts/RASKHAL.ttf');
 }
