@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(227, 129, 178, 0.3);
+    overflow: auto;
 }
 
 .logo {
@@ -44,12 +45,13 @@ body {
 }
 
 .zine-heading {
-    margin-top: 90px;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
+    margin-top: 90px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .zine-container {
@@ -72,6 +74,11 @@ body {
 
 .flag-section {
     margin-bottom: 30px;
+}
+
+.year {
+    font-family: "Arial", sans-serif;
+    color: rgb(90, 21, 21);
 }
 
 .flag-heading {
