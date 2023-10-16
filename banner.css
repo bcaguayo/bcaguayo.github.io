@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
     margin: 0;
+    /* background-image: url(images/coffee.jpg); */
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
 }
 
 .zine-container {
