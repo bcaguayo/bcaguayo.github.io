@@ -1,0 +1,66 @@
+.navbar-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px; /* Add this line */
+}
+
+body {
+    background-image: url("https://get.pxhere.com/photo/black-and-white-newspaper-monochrome-art-recording-drawing-design-poster-image-news-wallpapper-monochrome-photography-832680.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar-links {
+    margin-left: auto;
+    display: flex;
+}
+
+.navbar-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.main-content {
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgba(30, 23, 23, 0.867); 
+    padding: 20px; 
+    text-align: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(224, 127, 186, 0.5); /* Semi-transparent pink */
+}
+
+h1, h2, p {
+    font-family: "Zombie Punks", sans-serif;
+    color: rgb(204, 204, 204); /* Replace "Rashkal" with your desired font */
+}
+
+@font-face {
+    font-family: "Zombie Punks";
+    src: url("fonts/ZombiePunksRegular.woff") format("woff");
+}
