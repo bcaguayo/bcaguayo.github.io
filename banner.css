@@ -54,7 +54,7 @@ body {
 .zine-column {
     width: 45%;
     padding: 20px;
-    background-color: rgba(227, 129, 178, 0.25);
+    background-color: rgba(227, 129, 178, 0.5);
     border: 5px solid rgb(133, 233, 240);
     box-shadow: 0 0 10px rgba(199, 102, 139, 0.25);
     margin-left: 2px;
