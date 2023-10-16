@@ -1,8 +1,6 @@
 header {
     position: center;
     margin-top: 90px;
-    display: flex;
-    align-items: center;
 }
 
 body {
@@ -48,7 +46,7 @@ body {
 .zine-column {
     width: 45%;
     padding: 20px;
-    /* background-color: #fff; */
+    background-color: rgba(227, 129, 178, 0.25);
     border: 5px solid rgb(133, 233, 240);
     box-shadow: 0 0 10px rgba(199, 102, 139, 0.25);
     margin-left: 2px;
@@ -92,7 +90,7 @@ body {
 
 h1, h2, p, li {    
     font-family: "RASKHAL", sans-serif;
-    color: rgb(133, 233, 240);
+    color: rgb(90, 21, 21); /* Replace "Rashkal" with your desired font */
 }
 
 @font-face {
