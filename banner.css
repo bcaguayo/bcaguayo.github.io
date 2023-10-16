@@ -7,6 +7,15 @@ body {
     background-position: center;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227, 129, 178, 0.3);
+}
+
 .logo {
     margin-left: 20px;
 }
@@ -33,10 +42,10 @@ body {
     margin-left: auto;
     display: flex;
 }
-
+    
 .zine-heading {    
     margin-top: 90px;
-    font-size: 2rem;
+    font-size: 100px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
@@ -96,12 +105,22 @@ body {
     margin-bottom: 5px;
 }
 
-h1, h2, p, li {    
+h1, h2 {    
     font-family: "RASKHAL", sans-serif;
+    color: rgb(90, 21, 21); /* Replace "Rashkal" with your desired font */
+}
+
+p, li {    
+    font-family: "Handwriting", sans-serif;
     color: rgb(90, 21, 21); /* Replace "Rashkal" with your desired font */
 }
 
 @font-face {
     font-family: "RASKHAL";
-    src: url('fonts/RASKHAL.ttf');
+    src: url("fonts/RASKHAL.ttf");
+}
+
+@font-face {
+    font-family: "Handwriting";
+    src: url("fonts/ShiftyNotesRegular-BWZ6d.ttf");
 }
