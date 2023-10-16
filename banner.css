@@ -1,8 +1,3 @@
-header {
-    position: center;
-    margin-top: 90px;
-}
-
 body {
     font-family: "RASHKAL", sans-serif;
     margin: 0;
@@ -10,6 +5,21 @@ body {
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(52, 12, 12);
+    display: flex;
+    align-items: center;
 }
 
 .navbar-link {
@@ -24,22 +34,13 @@ body {
     display: flex;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(90, 21, 21);
-    display: flex;
-    align-items: center;
-}
-
-.zine-heading {
+.zine-heading {    
+    margin-top: 90px;
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 50px;
   }
 
 .zine-container {
