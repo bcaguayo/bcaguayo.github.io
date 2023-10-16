@@ -1,7 +1,11 @@
+header {
+    position: center;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'RASHKAL', sans-serif;
     margin: 0;
-    /* background-image: url(images/coffee.jpg); */
+    background-image: url("/images/coffee.jpg");
     background-size: cover;
     background-repeat: repeat-y;
     background-position: center;
@@ -56,4 +60,9 @@ body {
 .flag-details li {
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: 'RASKHAL';
+    src: url('fonts/RASKHAL.ttf');
 }
