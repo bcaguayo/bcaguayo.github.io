@@ -7,6 +7,10 @@ body {
     background-position: center;
 }
 
+.plainbg {
+    background-color: rgb(169, 226, 238);
+}
+
 .overlay {
     position: fixed;
     top: 0;
