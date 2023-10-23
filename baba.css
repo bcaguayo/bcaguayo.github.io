@@ -1,22 +1,32 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
 
+.plainbg {
+    background-color: rgb(0, 0, 0);
+    padding-top: 50px;
+}
+
 .baba {
     padding-block: 20px;
-    color: rgb(20, 12, 13);
+    color: #140c0d;
+    background-color: #140c0d;
 }
 
 /* Header Styles */
 header {
+    font-family: "Goblin", sans-serif;
     background-color: #333;
     color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    align-items: center;
+    font-size: x-large;
 }
 
 .logo img {
@@ -32,6 +42,7 @@ header {
     background-color: #6e3f36;
     display: flex;
     align-items: center;
+    z-index: 999;
 }
 
 .navbar-link {
@@ -61,11 +72,15 @@ nav a {
     text-decoration: none;
 }
 
+.img {
+    width: 100px;
+    height: 100px;
+}
+
 /* Hero Styles */
 .hero {
-    background-image: url('hero.jpg');
+    background-color: #333;
     background-size: cover;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +113,7 @@ nav a {
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px 0;
+    color: #fff;
 }
 
 .article {
@@ -160,4 +176,19 @@ footer {
 
 .social-media i {
     font-size: 24px;
+}
+
+@font-face {
+    font-family: "Goblin";
+    src: url("fonts/GlitchGoblin-2O87v.ttf");
+}
+
+@font-face {
+    font-family: "Drexs";
+    src: url("fonts/Drexs-z8gB3.ttf");
+}
+
+@font-face {
+    font-family: "Varino";
+    src: url("fonts/VarinonormalRegular-1GXaM.ttf");
 }
