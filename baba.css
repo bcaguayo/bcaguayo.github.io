@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.badbad {
+    padding-block: 20px;
+    color: rgb(20, 12, 13);
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #6e3f36;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.navbar-links {
+    margin-left: auto;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Styles */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Featured Articles Styles */
+.featured-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.article {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.article img {
+    max-width: 100%;
+}
+
+.article h3 {
+    margin: 10px 0;
+}
+
+/* Latest News Styles */
+.latest-news {
+    margin: 50px 0;
+}
+
+.latest-news h2 {
+    margin-bottom: 20px;
+}
+
+.latest-news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.latest-news li {
+    margin-bottom: 10px;
+}
+
+.latest-news a {
+    color: #333;
+    text-decoration: none;
+}
+
+.latest-news .date {
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-media i {
+    font-size: 24px;
+}
