@@ -26,11 +26,11 @@
         <header>
             <div class="plainbg" style="position: center; padding: auto;">
                 <h1 class="zine-heading">A B A N D O N W A R E</h1>
-            </div>            
+            </div>
         </header>
 
         <div class="plainbg" style="position: center;">
-            <img src="images/pc.gif" alt="PC" width="100%" height="100%">
+            <img src="images/pc.gif" alt="PC" width=100px height=100px>
             <!-- <h1 class="a-heading">KNOW YOUR FLAGS: A QUEER BANNER COMPENDIUM</h1> -->
         </div>
 
@@ -47,7 +47,7 @@
 
         <!-- Featured Articles Section -->
         <section clatyss="featured-articles">
-            <h2>PICK A GAME</h2>
+            <h2 class="article">PICK A GAME</h2>
             <div class="article">
                 <div class="img">
                     <img src="images/games/pokemon.webp" alt="Article 1">
@@ -64,9 +64,25 @@
                 <div class="img">
                     <img src="images/games/pets.jpeg" alt="Article 3">
                 </div>
-                <h3>Pet Socie</h3>
+                <h3>Pet Society</h3>
             </div>
         </section>
+
+        <!-- HTML code -->
+        <button onclick="showDiv()">Click me</button>
+        <div id="myDiv" style="display:none;">Hello World!</div>
+
+        <script>
+            // JavaScript code
+            function showDiv() {
+                document.getElementById("myDiv").style.display = "block";
+            }
+
+            // JavaScript code
+            function hideDivs() {
+                document.getElementById("myDiv").style.display = "block";
+            }
+        </script>
 
         <!-- Latest News Section -->
         <!-- <section class="latest-news">
