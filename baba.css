@@ -114,6 +114,7 @@ nav a {
     justify-content: center;
     margin: 50px 0;
     color: #fff;
+    font-family: "Drexs", sans-serif;
 }
 
 .article {
@@ -128,6 +129,7 @@ nav a {
 
 .article h3 {
     margin: 10px 0;
+    color: #fff;
 }
 
 /* Latest News Styles */
@@ -150,7 +152,7 @@ nav a {
 }
 
 .latest-news a {
-    color: #333;
+    color: #999;
     text-decoration: none;
 }
 
