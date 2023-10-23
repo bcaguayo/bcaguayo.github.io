@@ -13,14 +13,14 @@ body {
 
 .baba {
     padding-block: 20px;
-    color: #140c0d;
-    background-color: #140c0d;
+    color: #ffffff;
+    background-color: #251517;
 }
 
 /* Header Styles */
 header {
     font-family: "Goblin", sans-serif;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -79,7 +79,7 @@ nav a {
 
 /* Hero Styles */
 .hero {
-    background-color: #333;
+    background-color: #000000;
     background-size: cover;
     display: flex;
     justify-content: center;

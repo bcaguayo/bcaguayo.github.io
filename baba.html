@@ -10,28 +10,29 @@
 </head>
 
 <body>
+
+
+    <!-- Header Section -->
+
+    <nav class="navbar">
+        <img class="logo" src="/images/violet.png" alt="Logo" width="25" height="25">
+        <div class="navbar-links">
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="banner.html">Banners</a>
+            <a class="navbar-link" href="baba.html">Baba</a>
+        </div>
+    </nav>
+
     <div class="baba">
 
-        <!-- Header Section -->
-
-        <nav class="navbar">
-            <img class="logo" src="/images/violet.png" alt="Logo" width="25" height="25">
-            <div class="navbar-links">
-                <a class="navbar-link" href="index.html">Home</a>
-                <a class="navbar-link" href="banner.html">Banners</a>
-                <a class="navbar-link" href="baba.html">Baba</a>
-            </div>
-        </nav>
-
-        <header>
-            <div class="plainbg" style="position: center; padding: auto;">
+        <header style="text-align: center;">
+            <div class="plainbg" style="text-align: center; padding: auto;">
                 <h1 class="zine-heading">A B A N D O N W A R E</h1>
             </div>
         </header>
 
-        <div class="plainbg" style="position: center;">
-            <img src="images/pc.gif" alt="PC" width=100px height=100px>
-            <!-- <h1 class="a-heading">KNOW YOUR FLAGS: A QUEER BANNER COMPENDIUM</h1> -->
+        <div class="plainbg" style="text-align:center;">
+            <img src="images/pc.gif" alt="PC" width="200px" height="200px" style="margin:auto;">
         </div>
 
 
@@ -46,8 +47,11 @@
         </section> -->
 
         <!-- Featured Articles Section -->
-        <section clatyss="featured-articles">
-            <h2 class="article">PICK A GAME</h2>
+        <section class="featured-articles">
+            <div class="article">
+                <h2 style="color: white;">PICK A GAME</h2>
+            </div>
+
             <div class="article">
                 <div class="img">
                     <img src="images/games/pokemon.webp" alt="Article 1">
@@ -69,7 +73,7 @@
         </section>
 
         <!-- HTML code -->
-        <button onclick="showDiv()">Click me</button>
+        <!-- <button onclick="showDiv()">Click me</button> -->
         <div id="myDiv" style="display:none;">Hello World!</div>
 
         <script>
