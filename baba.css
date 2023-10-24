@@ -22,11 +22,14 @@ header {
     font-family: "Goblin", sans-serif;
     background-color: #000000;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
     align-items: center;
     font-size: x-large;
+}
+
+header h5, h6 {
+    font-family: "Varino", sans-serif;
+    font-size: small;
 }
 
 .logo img {
@@ -39,7 +42,7 @@ header {
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #6e3f36;
+    background-color: #333;
     display: flex;
     align-items: center;
     z-index: 999;
