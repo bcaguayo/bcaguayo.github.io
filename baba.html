@@ -81,11 +81,13 @@
             </div>
         </section> -->
 
+        <div class="article" font-family="Drexs">
+            <h2 style="color: white;">PICK A GAME</h2>
+        </div>
+
         <!-- Featured Articles Section -->
         <section class="featured-articles">
-            <div class="article">
-                <h2 style="color: white;">PICK A GAME</h2>
-            </div>
+            
 
             <div class="article">
                 <div class="img">
@@ -107,9 +109,27 @@
             </div>
         </section>
 
+        <button type="button" onclick="toggleImage()">Show/Hide Image</button>
+        <img id="myImage" src="images/games/blade-runner.jpg" style="display: none;">
+
+        <script>
+            function toggleImage() {
+                var image = document.getElementById("myImage");
+                if (image.style.display === "none") {
+                    image.style.display = "block";
+                } else {
+                    image.style.display = "none";
+                }
+            }
+        </script>
+
         <!-- HTML code -->
-        <!-- <button onclick="showDiv()">Click me</button> -->
-        <div id="myDiv" style="display:none;">Hello World!</div>
+        <button onclick="showDiv()">Button</button>
+
+        <div id="myDiv" class="article" style="display:none;">Hello World!
+            <h3>Quake	PC	Video game	1996	2003</h3>
+            <image src="https://m.media-amazon.com/images/M/MV5BMmJmNTNiNGUtN2RiZS00Y2I3LTlhMDktM2EzYTg4MTAxNjQyXkEyXkFqcGdeQXVyMjU3MzI1NzI@._V1_FMjpg_UX500_.jpg" alt="Article 3">
+        </div>
 
         <script>
             // JavaScript code
