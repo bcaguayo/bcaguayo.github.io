@@ -28,7 +28,7 @@
             e.preventDefault();
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
-            const res = await fetch("URL", {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl/exec", {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
@@ -40,3 +40,6 @@
     </script>
 </body>
 </html>
+
+<!-- Deployment ID: AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl -->
+<!-- URL: https://script.google.com/macros/s/AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl/exec -->
