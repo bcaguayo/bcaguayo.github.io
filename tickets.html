@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Ticket</title>
+<style>
+    body {font-family: Arial, sans-serif; padding: 2rem; }
+    form { max-width: 500px; margin: auto;}
+    input, textarea, button { width: 100%; margin: 10px 0; padding: 10px; }
+    button { align-items: center;}
+</style>
+</head>
+<body>
+    <h2>CCL - Submit an MI Request</h2>
+    <form id="ticketForm">
+        <input name="name" placeholder="Your Name" required>
+        <input name="email" type="email" placeholder="Your Email" required>
+        <textarea name="request" placeholder="Describe your Request... "
+        rows="5"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="statusMessage"></p>
+
+    <script>
+        const form = document.getElementById('ticketForm');
+        form.addEventListener('submit', async () => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+            const res = await fetch("URL", {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+        });
+        const result = await res.json();
+        document.getElementById().textContent = result.message;
+        form.reset();
+    </script>
+</body>
+</html>
