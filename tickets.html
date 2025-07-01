@@ -7,7 +7,7 @@
 <style>
     body {font-family: Arial, sans-serif; padding: 2rem; }
     form { max-width: 500px; margin: auto;}
-    input, textarea, button { width: 100%; margin: 10px 0; padding: 10px; }
+    input, textarea, button, output { width: 100%; margin: 10px 0; padding: 10px; }
     button { align-items: center; width: 105%;}
 </style>
 </head>
@@ -21,6 +21,7 @@
         <button type="submit">Submit</button>
     </form>
     <p id="statusMessage"></p>
+    <div name="output" ></div>
 
     <script>
         const form = document.getElementById('ticketForm');
@@ -28,7 +29,16 @@
             e.preventDefault();
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
-            const res = await fetch("https://script.google.com/macros/s/AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl/exec", {
+            // Display the data in the output div
+            document.querySelector('div[name="output"]').innerHTML = `
+                <h3>Submitted Data:</h3>
+                <ul>
+                    <li><strong>Name:</strong> ${data.name}</li>
+                    <li><strong>Email:</strong> ${data.email}</li>
+                    <li><strong>Request:</strong> ${data.request}</li>
+                </ul>
+            `;
+            const res = await fetch("https://script.google.com/macros/s/AKfycbyn3x4bFS0xankpHzfSZ7o-tgTKr2JGqrLbqX7266698ACeNRAQfnVOUPgpv1wmoxJARg/exec", {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
@@ -41,5 +51,5 @@
 </body>
 </html>
 
-<!-- Deployment ID: AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl -->
-<!-- URL: https://script.google.com/macros/s/AKfycbwYBCiA68gtiuQB1Fj1PP6mjL0m97vqE4myNGsH68BcBLSxgNvduy4no87oEOIJplKl/exec -->
+<!-- Deployment ID: AKfycbyn3x4bFS0xankpHzfSZ7o-tgTKr2JGqrLbqX7266698ACeNRAQfnVOUPgpv1wmoxJARg -->
+<!-- URL: https://script.google.com/macros/s/AKfycbyn3x4bFS0xankpHzfSZ7o-tgTKr2JGqrLbqX7266698ACeNRAQfnVOUPgpv1wmoxJARg/exec -->
